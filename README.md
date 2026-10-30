@@ -20,7 +20,7 @@ Click the green **Code** button at the top of this page and select **Download ZI
 Extract the downloaded ZIP file into a folder.
 
 ### Step 2: Open Terminal
-Open your terminal and navigate to the folder where you extracted the project:
+Open your terminal and navigate into the extracted project folder:
 
 ```bash
-cd path/to/extracted/folder
+cd bounty-hunter
