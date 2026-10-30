@@ -1,4 +1,4 @@
-بفرما حاجی، کل متن رو توی این باکس گذاشتم. فقط کافیه دکمه کپی بالای باکس رو بزنی و توی گیت‌هاب پیست کنی:
+
 
 ```markdown
 # 🎯 Bounty Hunter - Advanced Reconnaissance Center
