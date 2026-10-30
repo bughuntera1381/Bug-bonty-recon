@@ -1,26 +1,65 @@
-# 🎯 Bounty Hunter - Advanced Reconnaissance Center
+🎯 Bounty Hunter - Recon Dashboard
 
-A local, browser-based bug bounty reconnaissance dashboard for Linux. 
-This tool runs real reconnaissance tools (`subfinder`, `httpx`, `nuclei`) and streams their output live to a modern web UI.
-
-## ✨ Features
-- **Live Console**: Watch the output of your scans in real-time.
-- **Modern UI**: A sleek, dark-themed dashboard.
-- **Scope Enforcement**: Filters out-of-scope hosts before running `nuclei`.
-- **Export Results**: Save your findings as TXT, JSON, or CSV.
+A sleek, local web dashboard for automating Bug Bounty reconnaissance. It runs real security tools and streams their output live to your browser.
 
 ---
 
-## 🚀 Quick Start Guide
+🚀 How to Run (Quick Start)
 
-Follow these simple steps to run the tool on your Linux machine:
+1. Extract the Project
 
-### Step 1: Download the Project
-Click the green **Code** button at the top of this page and select **Download ZIP**. 
-Extract the downloaded ZIP file into a folder.
+Download the ZIP file and extract it to a folder.
 
-### Step 2: Open Terminal
-Open your terminal and navigate into the extracted project folder:
+2. Open Terminal
 
-```bash
+Open your terminal and navigate into the project folder:
+
 cd bounty-hunter
+
+3. Install Requirements
+
+Install the required Python packages:
+
+pip3 install -r requirements.txt
+
+4. Launch the Dashboard
+
+Start the application:
+
+python3 main.py
+
+5. Start Scanning
+
+The dashboard will automatically open in your browser at:
+
+"http://127.0.0.1:8080"
+
+Enter your target domain and click Start Scan!
+
+---
+
+🛠️ Requirements
+
+Before running the application, make sure the following tools are installed and available in your system PATH:
+
+- Subfinder — Subdomain enumeration
+- HTTPX — ProjectDiscovery version (Go binary, not Python package)
+- Nuclei — Vulnerability scanning
+
+Note: If Nuclei reports a template-related error, update its templates:
+
+nuclei -update-templates
+
+---
+
+⚖️ Disclaimer
+
+This tool is developed for educational purposes and authorized Bug Bounty reconnaissance and security testing only.
+
+Only scan domains and assets for which you have explicit permission.
+
+The developer is not responsible for any misuse or unauthorized activity involving this tool.
+
+---
+
+Built for Bug Bounty Hunters. 🎯
